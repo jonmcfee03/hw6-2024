@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
 	console.log("Autoplay is set to false");
 	video.loop = false;
 	console.log("Loop is set to false");
+	document.querySelector("#volume").textContent = video.volume * 100 + "%";
 });
 
 document.querySelector("#play").addEventListener("click", function() {
